@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task App</title>
+  </head>
+  <body class="bg-zinc-900 text-white px-10">
+    <div class="flex justify-center items-center h-screen gap-x-2">
+      <div class="flex justify-center items-center bg-zinc-700 p-10 rounded-md max-w-md h-1/2 overflow-y-auto">
+        <form id="#taskForm">
+          <label for="title" class="block">Title</label>
+          <input type="text" placeholder="Write a title" id="#title" name="title" class="bg-gray-800 px-1 py-1 w-full rounded-md mb-1"/>
+          <label for="description" class="block">Description</label>
+          <textarea
+            id="#description"
+            name="description"
+            rows="3"
+            placeholder="Write a description"
+            class="bg-gray-800 px-1 py-2 w-full rounded-md resize-none  mb-5"
+          ></textarea>
+          <button class="bg-slate-200 rounded-md text-black px-3 py-1 hover:bg-slate-50">Save</button>
+        </form>
+      </div>
+      <div id="#taskList" class="bg-zinc-700 max-w-md w-full h-1/2 overflow-y-auto p-10 rounded-md"></div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
